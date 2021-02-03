@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('SCM checkout ') {
+            steps {
+                echo 'ckerckout completed'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'jenkins file from githuuub'
+                echo 'Build  completed'
+            }
+        }
+        stage('Test ') {
+            steps {
+                echo 'Test completed'
+                
+            }
+        }
+        stage('deploy ') {
+            steps {
+                echo 'Deploy completed'
+            }
+        }
+    }
+}
